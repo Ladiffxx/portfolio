@@ -1,0 +1,149 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+.bg-dark {
+    background-color: #1a202c;
+}
+.bg-light-blue {
+    background-color: #2d3748;
+}
+.text-blue {
+    color: #3182ce;
+}
+.menu-item {
+    background-color: #2c5282; /* Adjusted to Tailwind's blue-800 for consistency */
+    padding: 10px; /* Tailwind's p-2 */
+}
+
+.competences-section {
+    border-top: 1px solid #4a5568; /* Tailwind's gray-600 for a subtle separator */
+    border-bottom: 1px solid #4a5568; /* Same as above */
+}
+
+.competence {
+    background-color: #2d3748; /* Tailwind's gray-700 for card background */
+    padding: 16px; /* Tailwind's p-4 */
+    border-radius: 0.25rem; /* Tailwind's rounded */
+    text-align: center;
+    display: flex; /* Align children with flexbox */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: start; /* Align children to the start of the main axis */
+    height: 100%; /* Make sure each card takes up the full height */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create three columns of equal width */
+    gap: 1rem; /* Space between columns */
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)); /* Prevent column overflow */
+    }
+}
+
+.competence i {
+    margin-bottom: 0.5rem; /* Tailwind's mb-2 */
+}
+
+.competence h2 {
+    color: #81e6d9; /* Tailwind's teal-300 for a pop of color */
+    margin-bottom: 0.25rem; /* Tailwind's mb-1 */
+}
+
+.competence p {
+    color: #cbd5e0; /* Tailwind's gray-300 for readable contrast */
+}
+
+.projet {
+    background-color: #2d3748; /* Dark blue background */
+    padding: 16px; /* Padding all around */
+    border-radius: 0.25rem; /* Rounded corners */
+    text-align: center; /* Center the text */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Space between items */
+    height: 100%; /* Full height to match other cards */
+}
+
+/* You may also want to add some hover effects for interactivity */
+.projet:hover {
+    background-color: #4a5568; /* Lighten the background on hover */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+}
+
+.navigation-button {
+    display: block;
+    padding: 10px 20px;
+    margin: 10px 0; /* Space between buttons */
+    background-color: #2c5282; /* Button background color */
+    color: #ffffff; /* Button text color */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navigation-button:hover {
+    background-color: #2b6cb0; /* Button background color on hover */
+    cursor: pointer;
+}
+
+.cv-view-button {
+    display: block;
+    width: 100%; /* Makes the button full-width */
+    padding: 15px 0; /* Larger padding for a bigger button */
+    background-color: #4c51bf; /* Button color */
+    color: #ffffff; /* Text color */
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px; /* Larger font size */
+    font-weight: bold;
+    margin-top: 20px; /* Space from the content above */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cv-view-button:hover {
+    background-color: #5a67d8; /* Lighter color on hover */
+    cursor: pointer;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px; /* Spacing between icons */
+    font-size: 24px; /* Icon size */
+    color: #ffffff; /* Icon color */
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    color: #4c51bf; /* Color change on hover */
+}
+
+.cv-button {
+    display: block;
+    width: 100%; /* Full width */
+    padding: 1rem; /* Larger padding */
+    background-color: #3182ce; /* Button color */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.25rem; /* Larger font size */
+    font-weight: bold;
+    margin-top: 1rem;
+    border-radius: 0.5rem; /* Rounded corners */
+    transition: background-color 0.2s;
+}
+
+.cv-button:hover {
+    background-color: #63b3ed; /* Lighter blue on hover */
+    cursor: pointer;
+}
