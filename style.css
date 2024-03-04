@@ -160,3 +160,10 @@ body {
     height: 100%; /* Full height to match other cards */
 
 }
+
+.rounded-full {
+    width: 200px; /* Or the width you desire */
+    height: auto; /* This will maintain the aspect ratio */
+    border-radius: 50%; /* To maintain the round shape */
+    object-fit: cover; /* To ensure the image covers the area without stretching */
+  }
