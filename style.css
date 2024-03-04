@@ -147,3 +147,16 @@ body {
     background-color: #63b3ed; /* Lighter blue on hover */
     cursor: pointer;
 }
+
+.veille {
+
+    background-color: #2d3748; /* Dark blue background */
+    padding: 16px; /* Padding all around */
+    border-radius: 0.25rem; /* Rounded corners */
+    text-align: center; /* Center the text */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Space between items */
+    height: 100%; /* Full height to match other cards */
+
+}
